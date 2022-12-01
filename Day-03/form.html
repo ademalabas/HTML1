@@ -10,20 +10,73 @@
     <!--Ilk formimi olusturdum-->
      <!--Get/Update/Delete/Post/Put-->
     <form action="">
-        <label for="">NAME</label>
-        <input type="text"/>
+        <label for="name">NAME</label>
+        <input type="text" name="name" value="" id="name" placeholder="isim giriniz"/>
         <label for="">PASSWORD</label>
-        <input type="password"/>
+        <input type="password" name="password"/>
         <label for="">ID</label>
-        <input type="number"/>
+        <input type="number" name="number" value="" placeholder="10 haneli bir sayi giriniz"/>
         <label for="">ARAMA</label>
-        <input type="search">
+        <input type="search" name="search">
         <label for="">URL</label>
-        <input type="url"/>
+        <input type="url" name="url"/>
         <label for="">EMAIL</label>
-        <input type="email"/>
+        <input type="email" name="email"/>
         <label for="">KULLANILMAZ</label>
         <input type="text" disabled/>
+        <!-- FARKLI TURLER -->
+        <hr><br>
+        <label for="">CHECKBOX</label>
+        <input type="checkbox" name="" id="">
+
+
+        <!-- radio-> iki,üç .. seçenekten birini seçmemizi saglar
+        bunun için bütün seçeneklerdeki "name" variablesi aynı olmalı. 
+        value değeride mutlaka girilmeli ki kullanıcının ne seçtiği arka tarafa gönderilebilsin
+        lable deki for ve input daki id ile birbiri ile ilişkilendirilebilir-->
+        <input type="radio" name="radio-secenek" id="evli" value="evli" />
+        <label for="evli">EVLI</label>
+        <input type="radio" name="radio-secenek" id="bekar" value="bekar" />
+        <label for="bekar">BEKAR</label>
+        <input type="radio" name="radio-secenek" id="N" value="N" />
+        <label for="N">Not</label>
+
+        <label for="">Dosya yukle</label>
+        <input type="file" name="" id="">
+
+        <label for="">TARIH SEC</label>
+        <input type="date" name="" id="">
+        <label for="">SAAT</label>
+        <input type="datetime-local" name="" id="">
+
+          <!-- SELECT DENIYORUM -->
+      <label for="SAYILAR">SECENEKLER</label>
+      <select name="SAYILAR" multiple size="3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <!-- OPTGROUP DENIYORUM -->
+
+      <Label for="">OPTGROUP</Label>
+      <select name="" id="">
+        <optgroup label="MEYVELER">
+            <option value="ELMA">ELMA</option>
+            <option value="ARMUT">ARMUT</option>
+        </optgroup>
+        <optgroup label="SEBZELER">
+            <option value="DOMATES">DOMATES</option>
+            <option value="SALATALIK">SALATALIK</option>
+        </optgroup>
+
+      </select>
+      <!-- TEXT AREA DENIYORUM -->
+      <label for="yorum">TEXTAREA</label>
+      <textarea name="yorum" id="yorum" cols="10" rows="5" placeholder="Yorum yaziniz" required></textarea>
+
         <input type="button" value="DUGME"/>
         <input type="submit" value="GONDER"/>
         <input type="reset" value="RESET"/>
