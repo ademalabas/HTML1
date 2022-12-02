@@ -2,12 +2,12 @@
 
  #table{ 
     height: 200px;
-     width:500px
+     width:400px
      
  
  }
  #baslik{
-     background-color: #023047;
+     background-color: #dda15e;
      color:white;
      font-size: 18px;
 
@@ -20,6 +20,10 @@
  #renk2{
     background-color:#edede9 ; 
     text-align: center;
+ }
+ #left{
+   text-align: left;
+   font-weight: 600;
  }
  
 
