@@ -1,0 +1,17 @@
+
+html{
+    background-color: aqua;
+}
+.container{
+   background-color: red;
+   width: 100vw;
+   height: 100vh;
+}
+.test {
+    background-color: blue;
+    /*width: fit-content;
+    margin-left: 10px;
+    margin-top: 10px;*/
+    padding:5rem ;      /*Yaziyi ortaya hizalama icin kullanilir */
+    /*top right bottom left */
+}
