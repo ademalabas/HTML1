@@ -1,7 +1,17 @@
+
+:root{
+    --gerrard:#ace7df;
+    /* Bootstrap.
+Tailwind CSS.
+Foundation.
+Bulma.
+Skeleton. */
+
+}
 .transform{
     width: 100px; ;
     height: 50px;
-    background-color:red ;
+    background-color: var(--gerrard);
     color: white;
     text-align: center;
     margin: 50px;
